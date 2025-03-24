@@ -12,8 +12,11 @@ $data = ambildata($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPADU POLIBAN</title>
 </head>
+
+<body>
 <h1>Data Mahasiswa</h1>
     <br>
+    <a href="tambahmahasiswa.php">Tambah</a>
     <table border ="1" cellspacing = "0" cellpadding = "5">
         <thead>
             <th>No</th>
@@ -22,7 +25,7 @@ $data = ambildata($query);
             <th>TELP</th>
         </thead>
 </body>
-
+</body>
 <tbody>
 <?php 
 $i = 1;
