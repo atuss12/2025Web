@@ -45,33 +45,33 @@ include "templet/sidebar.php"
                 <div class="col-md-12">
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h3 class="card-title">Table Mahasiswa</h3>
+                            <h3 class="card-title">Table prodi</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                     <th>Nama Kaprodi</th>
+                                        <th>No</th>
+                                        <th>Nama</th>
+                                        <th>Nama Kaprodi</th>
                                         <th>Jurusan</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                $i = 1;
-                                foreach($data as $d) : ?>
-                                <tr>
-                                    <td><?= $i++; ?></td>
-                                    <td><?= $d["nama"]?></td>
-                                    <td><?= $d["kaprodi"]?></td>
-                                    <td><?= $d["jurusan"]?></td>
-                                </tr>
-                                <?php endforeach; ?>
+                                    $i = 1;
+                                    foreach ($data as $d) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $d["nama"] ?></td>
+                                            <td><?= $d["kaprodi"] ?></td>
+                                            <td><?= $d["jurusan"] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
-                                </table> 
-                                <a href="logout.php">keluar</a>
+                            </table>
+                            <a href="logout.php">keluar</a>
                             </table>
                         </div>
                         <!-- /.card-body -->
