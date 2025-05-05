@@ -22,7 +22,7 @@ include "templet/sidebar.php"
             <!--begin::Row-->
             <div class="row">
                 <div class="col-sm-6">
-                    <h3 class="mb-0">Dashboard</h3>
+                    <h3 class="mb-0">DATA PRODI</h3>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-end">
@@ -45,7 +45,7 @@ include "templet/sidebar.php"
                 <div class="col-md-12">
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h3 class="card-title">Table prodi</h3>
+                            <h3 class="card-title">Table Prodi</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
