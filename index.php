@@ -4,7 +4,7 @@ if (!isset($_SESSION['login'])) {
     header("location:login.html");
 }
 
-include "koneksi.php";
+include "koneksi.php"; 
 
 $query = "SELECT m. *, p. nama namaProdi FROM mahasiswa m JOIN prodi p on m.id_prodi = p.id";
 $data = ambildata($query);
@@ -45,7 +45,10 @@ include "templet/sidebar.php"
                 <div class="col-md-12">
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h3 class="card-title">Table Mahasiswa</h3>
+                            <h3 class="card-title">Data Mahasiswa</h3>
+                            <div class="card-tools">
+                                <a href="tambahmahasiswa.php" class="btn btn-primary">Tambah</a>
+                            </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -77,8 +80,8 @@ include "templet/sidebar.php"
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
-                                </table> 
-                                <a href="logout.php">keluar</a>
+                            </table>
+                            <a href="logout.php">keluar</a>
                             </table>
                         </div>
                         <!-- /.card-body -->
